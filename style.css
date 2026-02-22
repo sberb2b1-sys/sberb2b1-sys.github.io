@@ -1,0 +1,434 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    color: #1e1e1e;
+    background-color: #fcf9f7; /* Очень теплый, почти персиковый фон */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Типографика */
+h1, h2, h3 {
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+h2 {
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    display: inline-block;
+    color: #b8765d; /* Теплый терракотовый */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-left: 3px solid #b8765d;
+    padding-left: 10px;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1.5px solid transparent;
+}
+
+.btn-primary {
+    background-color: #b8765d;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #9e5f48;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(184, 118, 93, 0.2);
+}
+
+.btn-outline {
+    border-color: #b8765d;
+    color: #b8765d;
+}
+
+.btn-outline:hover {
+    background-color: #b8765d;
+    color: white;
+}
+
+/* БЛОК 1: Hero */
+.hero {
+    padding: 60px 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-tagline {
+    color: #b8765d;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.hero-title {
+    margin-bottom: 1.5rem;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    margin-bottom: 2rem;
+    max-width: 90%;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.hero-note {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.4s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.02);
+}
+
+/* БЛОК 2: Method */
+.method {
+    padding: 80px 0;
+}
+
+.method-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.method-steps {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f0e0d8;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.step-num {
+    background-color: #b8765d;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 600;
+}
+
+/* БЛОК 3: ЦЕНЫ */
+.prices {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.prices-intro {
+    max-width: 600px;
+    margin: 20px auto 0;
+    color: #5a5a5a;
+    font-size: 1.1rem;
+}
+
+.prices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 50px 0 40px;
+}
+
+.price-card {
+    background: #fcf9f7;
+    border-radius: 30px;
+    padding: 30px;
+    border: 1px solid #f0e0d8;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 35px rgba(184, 118, 93, 0.1);
+    border-color: #b8765d;
+}
+
+.price-card-popular {
+    border: 2px solid #b8765d;
+    transform: scale(1.02);
+    background: white;
+}
+
+.price-card-popular:hover {
+    transform: scale(1.02) translateY(-5px);
+}
+
+.price-badge {
+    position: absolute;
+    top: -12px;
+    left: 30px;
+    background: #b8765d;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.price-card-header {
+    margin-bottom: 20px;
+}
+
+.price-type {
+    display: block;
+    color: #b8765d;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.price-value {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #1e1e1e;
+    margin: 5px 0 5px;
+    display: inline-block;
+}
+
+.price-old {
+    color: #aaa;
+    text-decoration: line-through;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.price-card-body {
+    flex-grow: 1;
+    margin-bottom: 25px;
+}
+
+.price-card-body p {
+    color: #5a5a5a;
+    margin-bottom: 20px;
+}
+
+.price-features {
+    list-style: none;
+    padding: 0;
+}
+
+.price-features li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #f0e0d8;
+    color: #4a4a4a;
+}
+
+.price-features li:last-child {
+    border-bottom: none;
+}
+
+.price-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.prices-info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #fcf9f7;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.prices-info p {
+    margin: 10px 0;
+    color: #5a5a5a;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .price-card-popular {
+        transform: scale(1);
+    }
+    
+    .price-card-popular:hover {
+        transform: translateY(-5px);
+    }
+    
+    .price-value {
+        font-size: 1.8rem;
+    }
+    
+    .prices-info {
+        padding: 20px;
+        text-align: left;
+    }
+}
+
+/* БЛОК 4: About */
+.about {
+    padding: 80px 0;
+    background-color: #fffaf8;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.2);
+}
+
+.about-trust {
+    margin-top: 25px;
+    display: flex;
+    gap: 30px;
+    color: #b8765d;
+    font-weight: 500;
+}
+
+/* Упрощённый блок контактов (одна кнопка) */
+.contact-simple {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 10px;
+}
+
+.contact-simple .btn-large {
+    min-width: 250px;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Если хочешь добавить описание под кнопкой */
+.contact-note {
+    margin-top: 15px;
+    color: #888;
+    font-size: 0.85rem;
+}
+/* Для мобильных */
+@media (max-width: 768px) {
+    .messenger-btn {
+        padding: 12px 20px;
+    }
+    
+    .messenger-icon {
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+    
+    .messenger-name {
+        font-size: 0.8rem;
+    }
+    
+    .quick-buttons {
+        flex-direction: column;
+    }
+    
+    .quick-buttons .btn {
+        width: 100%;
+    }
+}
+
+/* Footer */
+footer {
+    padding: 30px 0;
+    border-top: 1px solid #f0e0d8;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Адаптивность (Mobile) */
+@media (max-width: 768px) {
+    .hero-grid, .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-description {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        grid-row: 1;
+    }
+
+    .contact-card {
+        padding: 40px 20px;
+    }
+
+    .method-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-trust {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
