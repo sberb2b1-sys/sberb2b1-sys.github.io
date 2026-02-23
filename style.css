@@ -353,15 +353,15 @@ h2 {
 /* Упрощённый блок контактов (одна кнопка) */
 .contact-simple {
     display: flex;
+    gap: 15px;
     justify-content: center;
-    margin: 20px 0 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
 }
 
 .contact-simple .btn-large {
-    min-width: 250px;
-    padding: 15px 40px;
-    font-size: 1.1rem;
-    text-align: center;
+    min-width: 200px;
+    margin: 0;
 }
 
 /* Если хочешь добавить описание под кнопкой */
@@ -371,10 +371,16 @@ h2 {
     font-size: 0.85rem;
 }
 /* Для мобильных */
-@media (max-width: 768px) {
-    .messenger-btn {
-        padding: 12px 20px;
+@media (max-width: 480px) {
+    .contact-simple {
+        flex-direction: column;
+        align-items: center;
     }
+    
+    .contact-simple .btn-large {
+        width: 100%;
+    }
+}
     
     .messenger-icon {
         font-size: 1.2rem;
@@ -392,7 +398,6 @@ h2 {
     .quick-buttons .btn {
         width: 100%;
     }
-}
 
 /* Footer */
 footer {
