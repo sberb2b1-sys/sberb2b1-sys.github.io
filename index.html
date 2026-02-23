@@ -85,7 +85,7 @@
                     </ul>
                 </div>
                 <div class="price-card-footer">
-                    <a href="#contact" class="btn btn-outline price-btn">Выбрать</a>
+                    <a href="https://t.me/olgakhalife" target="_blank" class="btn btn-outline price-btn">Связаться</a>
                 </div>
             </div>
 
@@ -105,7 +105,7 @@
                     </ul>
                 </div>
                 <div class="price-card-footer">
-                    <a href="#contact" class="btn btn-primary price-btn">Выбрать</a>
+                    <a href="https://t.me/olgakhalife" target="_blank" class="btn btn-primary price-btn">Связаться</a>
                 </div>
             </div>
 
@@ -125,12 +125,133 @@
                     </ul>
                 </div>
                 <div class="price-card-footer">
-                    <a href="#contact" class="btn btn-outline price-btn">Выбрать</a>
+                    <a href="https://t.me/olgakhalife" target="_blank" class="btn btn-outline price-btn">Связаться</a>
                 </div>
             </div>
         </div>
 
-<!-- БЛОК 4: КОНТАКТЫ -->
+<!-- БЛОК 4: ОБРАЗОВАНИЕ (3 карточки) -->
+<section class="education-compact">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">Квалификация</span>
+            <h2>Образование</h2>
+            <p class="education-intro">Нажмите, чтобы увидеть дипломы и сертификаты</p>
+        </div>
+
+        <div class="education-compact-grid">
+            <!-- Карточка 1: Базовое образование (МПГУ) -->
+            <div class="edu-card" data-modal="modal-1">
+                <div class="edu-card-content">
+                    <h3>Базовое образование</h3>
+                    <p class="edu-card-place">МПГУ, бакалавриат</p>
+                    <p class="edu-card-years">2016–2020</p>
+                </div>
+                <div class="edu-card-more">+</div>
+            </div>
+
+            <!-- Карточка 2: Гештальт-терапия -->
+            <div class="edu-card" data-modal="modal-2">
+                <div class="edu-card-content">
+                    <h3>Обучение методу "Гештальт-терапия"</h3>
+                    <p class="edu-card-place">Московский Институт гештальта и психодрамы </p>
+                    <p class="edu-card-years">2020–2024</p>
+                </div>
+                <div class="edu-card-more">+</div>
+            </div>
+
+            <!-- Карточка 3: Дополнительное образование -->
+            <div class="edu-card" data-modal="modal-3">
+                <div class="edu-card-content">
+                    <h3>Дополнительное образование</h3>
+                    <p class="edu-card-place">Повышение квалификации</p>
+                    <p class="edu-card-years">2021</p>
+                </div>
+                <div class="edu-card-more">+</div>
+            </div>
+        </div>
+
+        <!-- МОДАЛЬНЫЕ ОКНА (pop-up) -->
+
+        <!-- Модальное окно 1: МПГУ с дипломом бакалавра -->
+        <div id="modal-1" class="modal">
+            <div class="modal-content modal-content--image">
+                <span class="modal-close">&times;</span>
+                <div class="modal-header">
+                    <h3>Московский педагогический государственный университет</h3>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-place">Бакалавриат, факультет психологии и педагогики</p>
+                    <p class="modal-years">2016–2020</p>
+                    <p class="modal-desc">Психолого-педагогическое образование</p>
+                    
+                    <div class="modal-image-container">
+                        <img src="docs/diplom-mpgu.jpg" alt="Диплом МПГУ" class="modal-image" onclick="openFullscreen(this)">
+                        <p class="image-caption">Диплом бакалавра</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно 2: Обучение методу (диплом + сертификат) -->
+        <div id="modal-2" class="modal">
+            <div class="modal-content modal-content--image">
+                <span class="modal-close">&times;</span>
+                <div class="modal-header">
+                    <h3>Московский институт гештальта и психодрамы</h3>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-place">Профессиональная переподготовка</p>
+                    <p class="modal-years">2020–2024</p>
+                    <p class="modal-desc">Дополнительное профессиональное обучение методу "Гештальт-терапия".</p>
+                    
+                    <div class="modal-image-container">
+                        <img src="docs/gestalt-diplom.jpg" alt="Диплом гештальт-терапевта" class="modal-image" onclick="openFullscreen(this)">
+                        <p class="image-caption">Диплом о профессиональной переподготовке</p>
+                    </div>
+                    
+                    <div class="modal-image-container">
+                        <img src="docs/gestalt-certificate.jpg" alt="Сертификат гештальт-терапевта" class="modal-image" onclick="openFullscreen(this)">
+                        <p class="image-caption">Сертификат МИГИП</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно 3: Дополнительное образование (два удостоверения) -->
+        <div id="modal-3" class="modal">
+            <div class="modal-content modal-content--image">
+                <span class="modal-close">&times;</span>
+                <div class="modal-header">
+                    <h3>Дополнительное образование</h3>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-place">Курсы повышения квалификации</p>
+                    <p class="modal-years">2021</p>
+                    
+                    <div class="modal-image-container">
+                        <img src="docs/dop-obuchenie-1.jpg" alt="Удостоверение 1" class="modal-image" onclick="openFullscreen(this)">
+                        <p class="image-caption">Современные подходы к психотерапии расстройств пищевого поведения, 2021</p>
+                    </div>
+                    
+                    <div class="modal-image-container">
+                        <img src="docs/dop-obuchenie-2.jpg" alt="Удостоверение 2" class="modal-image" onclick="openFullscreen(this)">
+                        <p class="image-caption">АСТ - Терапия Принятия и Ответственности, 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Элемент для полноэкранного просмотра изображений -->
+        <div id="fullscreen-overlay" class="fullscreen-overlay" onclick="closeFullscreen()">
+            <span class="fullscreen-close">&times;</span>
+            <img id="fullscreen-image" class="fullscreen-image" src="">
+        </div>
+
+    </div>
+</section>
+
+<!-- БЛОК 5: КОНТАКТЫ -->
 <section class="contact" id="contact">
     <div class="container">
         <div class="contact-card">
@@ -138,7 +259,7 @@
             
             <div class="contact-simple">
                 <a href="https://t.me/olgakhalife" target="_blank" class="btn btn-primary btn-large">Telegram</a>
-                <a href="https://instagram.com/olga.khalife" target="_blank" class="btn btn-outline btn-large">Instagram</a>
+                <a href="https://instagram.com/olga_therapy" target="_blank" class="btn btn-outline btn-large">Instagram</a>
             </div>
             
             <!-- Маленький текст внутри блока -->
